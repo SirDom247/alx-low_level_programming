@@ -6,14 +6,14 @@
 */
 int main(void)
 {
-	char main[] = "main";
+	char *sh = "Holberton";
 
-	int c;
-
-	for (c = 0; c < 9; c++)
+	while (*sh)
 	{
-		_putchar(main[c]);
+		_putchar(*sh);
+		sh++;
 	}
 	_putchar('\n');
+
 	return (0);
 }
