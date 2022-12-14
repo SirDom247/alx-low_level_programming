@@ -13,7 +13,7 @@ int main(void)
 	for (c = 0; c < 9; c++)
 	{
 		_putchar(main[c]);
-	
+	}	
 	_putchar('\n');
 	return (0);
 }
