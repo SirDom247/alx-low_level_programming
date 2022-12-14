@@ -1,1 +1,1 @@
-This repository is for low level programming projects
+This directory contains various demonstrations and.implementations of C functions andnested loops
