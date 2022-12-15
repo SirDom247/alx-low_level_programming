@@ -1,38 +1,46 @@
 #include "main.h"
-/**
- * print_number - prints a number
- * @n: Input number
- */
 
+/**
+ * print_number -  checks for checks for a digit (0 through 9).
+ * @n: n -  Variable
+ * Return: Always 0 (success)
+ */
 void print_number(int n)
 {
-	long len, res, i, temp, expo;
+	unsigned int z;
+	int m, b;
 
-	res = n;
-	expo = len =  1;
-/*Check negatives*/
-	if (res < 0)
+	b = 10;
+
+	if (n < 10 && n >= 0)
 	{
-		res *= -1;
+		_putchar (n + '0');
+	}
+	else if (n > -10 && n < 0)
+	{
+		n = n - 2 * n;
 		_putchar('-');
+		_putchar (n + '0');
 	}
 
-/**/
-	temp = res;
-	while (temp >= 10)
+	else
 	{
-		len++;
-		temp /= 10;
-	}
-
-/*Create Exponent*/
-	for (i = 1; i < len; i++)
-		expo *= 10;
-/*Main */
-	while (expo > 1)
+		if (n < 0)
+		{
+			n = n * -1;
+			_putchar ('-');
+		}
+		z = n;
+	while (z / b > 9)
 	{
-		_putchar((res / expo) % 10 + '0');
-		expo /= 10;
+		b = b * 10;
 	}
-	_putchar(res % 10 + '0');
-}
+	while (b > 0)
+	{
+		m = z / b;
+		z = z % b;
+		_putchar (m + '0');
+		b = b / 10;
+	}
+	}
+} 
