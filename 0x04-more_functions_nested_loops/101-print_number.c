@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * print_number -  checks for checks for a digit (0 through 9).
  * @n: n -  Variable
@@ -42,5 +41,5 @@ void print_number(int n)
 		_putchar (m + '0');
 		b = b / 10;
 	}
-	}
-} 
+}
+
