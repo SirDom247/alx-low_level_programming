@@ -43,7 +43,7 @@ int help(int i, char *s)
  */
 int is_palindrome(char *s)
 {
-	//int i = 1;
+	int i = 1;
 
 	return (help(i, s));
 }
