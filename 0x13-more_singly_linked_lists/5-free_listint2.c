@@ -1,26 +1,21 @@
 #include "lists.h"
 
 /**
- * free_listint2 - function with one argument
- * @head: pointer to head pointer of list
- *
- * Description: frees a list
- * Return: na
+ * free_listint2 - function to free list
+ * @head: pointer to the pointer of the list
+ * Return: void
  */
 void free_listint2(listint_t **head)
 {
-	listint_t *traverse;
+	listint_t *freed;
 
-	if (head == NULL)
-	{
+	if (head == NULL || *head == NULL)
 		return;
-	}
-
-	while (*head)
+	while (*head != NULL)
 	{
-		traverse = (*head)->next;
-		free(*head);
-		*head = traverse;
+		freed = *head;
+		*head = (*(head))->next;
+		free(freed);
 	}
 	*head = NULL;
 }
