@@ -1,4 +1,4 @@
-//#include "lists.h"
+#include "lists.h"
 /**
   * free_listint_safe - define function
   * @h:
