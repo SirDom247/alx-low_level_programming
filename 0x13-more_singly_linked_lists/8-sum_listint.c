@@ -1,4 +1,4 @@
-//#include "lists.h"
+#include "lists.h"
 /**
   * sum_listint - sums all elements of a list
   * @head: pointer to the head of the list
