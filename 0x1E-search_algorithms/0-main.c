@@ -7,6 +7,7 @@
  *
  * Return: Always EXIT_SUCCESS
  */
+
 int main(void)
 {
 int array[] = {
@@ -19,4 +20,4 @@ int array[] = {
 	printf("Found %d at index: %d\n\n", 42, linear_search(array, size, 42));
 	printf("Found %d at index: %d\n", 999, linear_search(array, size, 999));
 	return (EXIT_SUCCESS);
-}
+} 
